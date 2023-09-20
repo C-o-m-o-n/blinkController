@@ -7,17 +7,21 @@
   created 20 Sep 2023
   by Collins Omondi
 
-  This example code is in the public domain.
+  This example code is avilable on github
 
-  https://www.arduino.cc/en/Tutorial/BuiltInExamples/CharacterAnalysis
+https://github.com/C-o-m-o-n/blinkController
 */
 
 void setup(){
   Serial.begin(9600);
+  // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
-
-  Serial.println("Hello, welcome to the blink contoller!\n \n send letter 'b' to turn the led on and 
-  letter 'q' to turn it off \n");
+  
+//  while (!Serial){
+//    ;
+//  }
+  
+  Serial.println("Hello, welcome to the blink contoller!\n\nsend letter 'b' to turn the led on and letter 'q' to turn it off \n");
   }
 //}
 
